@@ -17,4 +17,5 @@
     color: rgb(199, 13, 13);     
     font-family: "Open Sans";     
     src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),          
-    url("/fonts/OpenSans-Regular-webfont.woff") format("woff");      }
+    url("/fonts/OpenSans-Regular-webfont.woff") format("woff");      
+}
