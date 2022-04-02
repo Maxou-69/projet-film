@@ -4,7 +4,10 @@
 .nav{
     color: red;
 }
-
+.body{
+    color: rgb(199, 13, 13);
+    background-color: rgb(199, 13, 13);
+}
 
 .hero{     
     height:80vh;     
