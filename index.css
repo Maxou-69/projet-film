@@ -1,3 +1,17 @@
-.title{
-    justify-content: center;
+.title-hero-header{
+    text-align: center;
 }
+.nav{
+    color: red;
+}
+
+
+.hero{     
+    height:80vh;     
+    background-image: url("./assets/images/salle-cinema.jpeg");     
+    background-size: 100vw 120vh;     
+    font-family: monospace;     
+    color: rgb(199, 13, 13);     
+    font-family: "Open Sans";     
+    src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),          
+    url("/fonts/OpenSans-Regular-webfont.woff") format("woff");      }
