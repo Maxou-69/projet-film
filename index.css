@@ -19,3 +19,12 @@
     src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),          
     url("/fonts/OpenSans-Regular-webfont.woff") format("woff");      
 }
+
+.footer{
+    background-color: rgb(199, 13, 13);
+    text-align: center;
+}
+.p {
+    background-color: rgb(199, 13, 13);
+    text-align: center;
+}
