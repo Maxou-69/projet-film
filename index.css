@@ -1,13 +1,6 @@
 .title-hero-header{
     text-align: center;
 }
-.nav{
-    color: red;
-}
-.body{
-    color: rgb(199, 13, 13);
-    background-color: rgb(199, 13, 13);
-}
 
 .hero{     
     height:80vh;     
@@ -19,12 +12,15 @@
     src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),          
     url("/fonts/OpenSans-Regular-webfont.woff") format("woff");      
 }
-
-.footer{
-    background-color: rgb(199, 13, 13);
-    text-align: center;
+.container{
+    margin-top: 4vh;
 }
-.p {
+.card-img-top{
+height: 55vh;
+
+}
+
+.footerCredit {
     color: rgb(199, 13, 13);
     text-align: center;
 }
