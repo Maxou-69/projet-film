@@ -37,6 +37,11 @@ body {
     text-align: center;
 }
 
+.bi {
+    justify-content: center;
+    margin: auto;
+}
+
 .footerMarge {
     margin-top: 4vh;
 
