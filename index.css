@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+.body {
+    background: linear-gradient(brown, red);
+}
+
 .hero {
     height: 80vh;
     background-image: url("./assets/images/salle-cinema.jpeg");
