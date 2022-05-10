@@ -4,8 +4,6 @@ async function getMovies() {
     const data = await response.json()
     return data.Search
 }
-
-
 const data = getMovies().then(function (movies) {
 
 
