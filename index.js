@@ -5,32 +5,31 @@ async function getMovies() {
     return data.Search
 }
 const data = getMovies().then(function (movies) {
-
-
     console.log(movies)
-    movies.forEach(function (movie) {
-        console.log(movie.Title)
-    })
 
     movies.forEach(function (movie) {
-        console.log(movie.Year)
-    })
+        const card = document.createElement("div")
+        card.classList.add("cardapi")
 
-    movies.forEach(function (movie) {
-        const divMovieTitle = document.createElement("div")
-        divMovieTitle.textContent = movie.Title
-        document.body.appendChild(divMovieTitle)
-    })
-
-    movies.forEach(function (movie) {
-        const divMovieYear = document.createElement("div")
-        divMovieYear.textContent = movie.Year
-        document.body.appendChild(divMovieYear)
-    })
-
-    movies.forEach(function (movie) {
         const img = document.createElement("img")
         img.setAttribute("src", movie.Poster)
-        document.body.appendChild(img)
+        img.classList.add("card-img-top-2")
+        card.appendChild(img)
+
+        const cardBody = document.createElement("div")
+        cardBody.classList.add("card-body")
+        card.appendChild(cardBody)
+
+        const cardTitle = document.createElement("h5")
+        cardTitle.classList.add("card-title")
+        cardTitle.textContent = movie.Title
+        cardBody.appendChild(cardTitle)
+
+        const cardText = document.createElement("p")
+        cardText.classList.add("card-text")
+        cardText.textContent = movie.Year
+        cardBody.appendChild(cardText)
+
+        // document.body.appendChild(card)
     })
-}) 
+})

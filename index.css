@@ -30,6 +30,13 @@ body {
     height: 55vh;
 }
 
+.cardapi {
+    width: 20%;
+    display: inline-block;
+    margin: 20px 0;
+    padding: 0 5px;
+}
+
 
 .footerCredit {
     color: rgb(199, 13, 13);
