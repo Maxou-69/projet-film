@@ -11,6 +11,7 @@ const data = getMovies().then(function (movies) {
     console.log(movies)
 
     movies.forEach(function (movie) {
+        // description des cartes
         const card = document.createElement("div")
         card.classList.add("cardapi")
 
@@ -33,6 +34,7 @@ const data = getMovies().then(function (movies) {
         cardText.textContent = movie.Year
         cardBody.appendChild(cardText)
 
+        // application résultat
         carddoc.appendChild(card)
     })
 })
