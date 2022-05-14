@@ -1,9 +1,11 @@
+// appel à l'api
 async function getMovies() {
     const url = "https://www.omdbapi.com/?s=star%20wars&plot=short&apikey=2a4831ba"
     const response = await fetch(url)
     const data = await response.json()
     return data.Search
 }
+// traitement de desdonnées de l'api
 const data = getMovies().then(function (movies) {
     console.log(movies)
 
@@ -13,7 +15,7 @@ const data = getMovies().then(function (movies) {
 
         const img = document.createElement("img")
         img.setAttribute("src", movie.Poster)
-        img.classList.add("card-img-top-2")
+        img.classList.add("card-img-top")
         card.appendChild(img)
 
         const cardBody = document.createElement("div")
@@ -30,6 +32,6 @@ const data = getMovies().then(function (movies) {
         cardText.textContent = movie.Year
         cardBody.appendChild(cardText)
 
-        // document.body.appendChild(card)
+        document.body.div.row.col.card.appendChild(card)
     })
 })

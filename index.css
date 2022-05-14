@@ -22,14 +22,6 @@ body {
     width: 100%;
 }
 
-.card {
-    height: 85vh;
-}
-
-.card-img-top {
-    height: 55vh;
-}
-
 .cardapi {
     width: 20%;
     display: inline-block;
