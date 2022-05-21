@@ -38,3 +38,5 @@ const data = getMovies().then(function (movies) {
         carddoc.appendChild(card)
     })
 })
+
+// modif  alignement des cartes ajouter animation pour chaque carte
