@@ -1,4 +1,8 @@
 let carddoc = document.querySelector(".col");
+
+function compare(x, y) {
+    return x - y;
+}
 // appel à l'api
 async function getMovies() {
     const url = "https://www.omdbapi.com/?s=star%20wars&plot=short&apikey=2a4831ba"
