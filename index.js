@@ -1,4 +1,4 @@
-let carddoc = document.querySelector(".col");
+let carddoc = document.querySelector(".container-card");
 
 function compare(x, y) {
     return x - y;
