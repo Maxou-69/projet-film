@@ -36,7 +36,10 @@ body {
 }
 
 .g404 {
+    display: block;
+    width: auto;
     text-decoration: underline;
+    margin-bottom: 2px;
 }
 
 
