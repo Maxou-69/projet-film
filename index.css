@@ -40,11 +40,12 @@ body {
     width: auto;
     text-decoration: underline;
     margin-bottom: 2px;
+    color: white;
 }
 
 
 /* classe api */
-.container-card {
+.animation {
     background: linear-gradient(rgb(0, 0, 0), #db9a9a);
     width: 100%;
     display: flex;

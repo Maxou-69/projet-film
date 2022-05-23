@@ -1,4 +1,4 @@
-let carddoc = document.querySelector(".container-card");
+let carddoc = document.querySelector(".animation");
 
 function compare(x, y) {
     return x - y;
@@ -42,5 +42,4 @@ const data = getMovies().then(function (movies) {
         carddoc.appendChild(card)
     })
 })
-
 // modif  alignement des cartes ajouter animation pour chaque carte
