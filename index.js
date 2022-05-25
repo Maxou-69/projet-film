@@ -38,6 +38,11 @@ const data = getMovies().then(function (movies) {
         cardText.textContent = movie.Year
         cardBody.appendChild(cardText)
 
+        const cardButton = document.createElement("a")
+        cardButton.classList.add("card-button")
+        cardButton.innerHTML = '<button type="button" class="btn btn-outline-light">Voir plus</button>'
+        cardBody.appendChild(cardButton)
+
         // application résultat
         carddoc.appendChild(card)
     })
