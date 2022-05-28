@@ -136,12 +136,25 @@ footer {
 }
 
 @media (min-width: 100px) and (max-width: 1000px) {
+    a {
+        margin-bottom: 5px;
+        align-self: end;
+    }
+
+    .container-fluid {
+        flex-direction: column;
+        height: 216px;
+        flex-wrap: nowrap;
+    }
+
     .navbar {
-        height: 30vh;
+        height: auto;
+        padding: 0%;
+        margin-bottom: auto;
     }
 
     .nav-link {
-        margin: 0rem;
+        margin: 5px;
     }
 
     .cardapi {
