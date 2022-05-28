@@ -135,4 +135,30 @@ footer {
     flex-direction: column;
 }
 
-@media (min-width: 100px) and (max-width: 1000px) {}
+@media (min-width: 100px) and (max-width: 1000px) {
+    .navbar {
+        height: 30vh;
+    }
+
+    .nav-link {
+        margin: 0rem;
+    }
+
+    .cardapi {
+        width: auto;
+    }
+
+    .card-title {
+        color: blue;
+    }
+
+    .card-text {
+        color: blue;
+    }
+
+    .align-icon {
+        margin-bottom: 10px;
+    }
+
+
+}
