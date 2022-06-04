@@ -68,6 +68,7 @@ body {
 
 .card-title {
     margin: auto;
+    text-align: center;
 }
 
 .card-button {
