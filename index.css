@@ -44,10 +44,19 @@ body {
     margin-right: auto;
 }
 
+.search-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(rgb(0, 0, 0), #131212);
+    color: red;
+    padding-bottom: 5px;
+}
+
 
 /* classe api */
 .animation {
-    background: linear-gradient(rgb(0, 0, 0), #db9a9a);
+    background: linear-gradient(#131212, #db9a9a);
     width: 100%;
     display: flex;
     justify-content: center;
