@@ -63,14 +63,25 @@ body {
 }
 
 .card-text {
-    margin-bottom: 0;
+    margin: auto;
+}
+
+.card-title {
+    margin: auto;
+}
+
+.card-button {
+    margin: auto;
 }
 
 .card-body {
+    display: grid;
     max-width: 20rem;
-    max-height: 9rem;
+    height: 9rem;
     margin-left: auto;
     margin-right: auto;
+    gap: auto;
+    padding: auto;
 }
 
 .card-body:hover {
@@ -135,7 +146,7 @@ footer {
     flex-direction: column;
 }
 
-@media (min-width: 100px) and (max-width: 1000px) {
+@media (min-width: 100px) and (max-width: 1250px) {
     a {
         margin-bottom: 5px;
         align-self: end;
