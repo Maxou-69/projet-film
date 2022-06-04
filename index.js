@@ -1,8 +1,6 @@
 let carddoc = document.querySelector(".animation");
+let search = document.getElementById(".site-search");
 
-function compare(x, y) {
-    return x - y;
-}
 // appel à l'api
 async function getMovies() {
     const url = "https://www.omdbapi.com/?s=star%20wars&plot=short&apikey=2a4831ba"
