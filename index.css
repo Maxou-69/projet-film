@@ -102,7 +102,7 @@ body {
 
 .card-img-top {
     max-width: 20rem;
-    min-height: 500px;
+    height: 500px;
     align-items: flex-start;
 }
 
