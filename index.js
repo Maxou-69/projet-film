@@ -57,9 +57,10 @@ generateMoviesList()
 
 // Au clic sur le bouton, on envoie la recherche tapée à la même fonction
 // Après avoir vidé le HTML
-document.querySelector("button").addEventListener("click", function () {
-    var searchValue = document.getElementById("new").value;
+document.getElementById("button_recherche").addEventListener("click", function () {
+    const searchValue = document.getElementById("new").value;
 
-    carddoc.innerHTML = ""
+    document.querySelector(".animation").innerHTML = ""
     generateMoviesList(searchValue)
+    console.log(searchValue)
 })
