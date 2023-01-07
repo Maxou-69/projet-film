@@ -4,9 +4,14 @@ let carddoc = document.querySelector(".animation");
 // appel à l'api
 async function getMovies(searchValue = "jurassic_park") {
     const url = "https://www.omdbapi.com/?s=" + searchValue + "&plot=short&apikey=2a4831ba"
+    const urlyear = "https://www.omdbapi.com/?y=" + YearValue + "&plot=short&apikey=2a4831ba"
     const response = await fetch(url)
+    const responseyear = await fetch(urlyear)
     const data = await response.json()
+    const datayear = await response.json()
     return data.Search
+    return datayear.Search
+
 }
 // traitement des données de l'api
 function generateMoviesList(searchValue) {
@@ -41,7 +46,7 @@ function generateMoviesList(searchValue) {
             cardButton.classList.add("card-button")
             cardButton.setAttribute('href', "https://www.imdb.com/title/" + movie.imdbID);
             cardButton.setAttribute("target", "_blank")
-            cardButton.innerHTML = '<button type="button" class="btn btn-outline-light">Voir plus</button>'
+            cardButton.innerHTML = '<button type="button" class="btn btn-outline-light">Trailer</button>'
             cardBody.appendChild(cardButton)
 
             // application résultat
@@ -52,14 +57,13 @@ function generateMoviesList(searchValue) {
 // modif  alignement des cartes ajouter animation pour chaque carte
 // Execution du code au chargement de la page
 
-// Au chargement, on génère la liste par défaut avec recherche star wars
+// Au chargement, on génère la liste par défaut avec recherche jurassic park
 generateMoviesList()
 
 // Au clic sur le bouton, on envoie la recherche tapée à la même fonction
 // Après avoir vidé le HTML
 document.getElementById("button_recherche").addEventListener("click", function () {
     const searchValue = document.getElementById("new").value;
-
     document.querySelector(".animation").innerHTML = ""
     generateMoviesList(searchValue)
     console.log(searchValue)
