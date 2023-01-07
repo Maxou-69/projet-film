@@ -4,13 +4,10 @@ let carddoc = document.querySelector(".animation");
 // appel à l'api
 async function getMovies(searchValue = "jurassic_park") {
     const url = "https://www.omdbapi.com/?s=" + searchValue + "&plot=short&apikey=2a4831ba"
-    const urlyear = "https://www.omdbapi.com/?y=" + YearValue + "&plot=short&apikey=2a4831ba"
+    // var url = "https://www.omdbapi.com/?y=" + YearValue + "&plot=short&apikey=2a4831ba"
     const response = await fetch(url)
-    const responseyear = await fetch(urlyear)
     const data = await response.json()
-    const datayear = await response.json()
     return data.Search
-    return datayear.Search
 
 }
 // traitement des données de l'api
@@ -62,9 +59,15 @@ generateMoviesList()
 
 // Au clic sur le bouton, on envoie la recherche tapée à la même fonction
 // Après avoir vidé le HTML
-document.getElementById("button_recherche").addEventListener("click", function () {
+document.getElementById("button_recherche_titre").addEventListener("click", function () {
     const searchValue = document.getElementById("new").value;
     document.querySelector(".animation").innerHTML = ""
     generateMoviesList(searchValue)
     console.log(searchValue)
 })
+// document.getElementById("button_recherche_année").addEventListener("click", function () {
+//     const YearValue = document.getElementById("new").value;
+//     document.querySelector(".animation").innerHTML = ""
+//     generateMoviesList(YearValue)
+//     console.log(YearValue)
+// })
